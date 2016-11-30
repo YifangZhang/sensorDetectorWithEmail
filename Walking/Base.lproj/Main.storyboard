@@ -25,21 +25,33 @@
                                 <rect key="frame" x="69" y="476" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="StartMonitering:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j53-DR-FI6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogQ-CB-exy">
                                 <rect key="frame" x="240" y="476" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="StopMonitering:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cES-f5-32T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnG-Ob-MgG">
-                                <rect key="frame" x="65" y="529" width="36" height="30"/>
+                                <rect key="frame" x="67" y="529" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="ClearData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7y4-z8-OCN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HJ-xM-4oO">
                                 <rect key="frame" x="240" y="529" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Email"/>
+                                <connections>
+                                    <action selector="SendEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y2o-qf-qZ3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acc_x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sz-Bf-KnI">
                                 <rect key="frame" x="62" y="86" width="45" height="21"/>
@@ -209,6 +221,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-nf-VqZ">
+                                <rect key="frame" x="61" y="434" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAY-LX-wFl">
+                                <rect key="frame" x="149" y="433" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -216,6 +242,7 @@
                         <outlet property="label_acc_x" destination="yNO-Mv-BGj" id="cph-4Q-iS8"/>
                         <outlet property="label_acc_y" destination="lMm-Ih-JfI" id="khZ-eU-GrK"/>
                         <outlet property="label_acc_z" destination="Jdb-1W-S1T" id="0mB-O4-URz"/>
+                        <outlet property="label_compass" destination="mAY-LX-wFl" id="oPV-MS-kJN"/>
                         <outlet property="label_gyro_x" destination="D3i-eT-qIk" id="Tvg-5Y-Vif"/>
                         <outlet property="label_gyro_y" destination="V7P-4e-tGZ" id="NDm-Lu-npk"/>
                         <outlet property="label_gyro_z" destination="WZx-dv-KZm" id="eBe-kj-Thn"/>
